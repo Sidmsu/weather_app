@@ -1,0 +1,29 @@
+The provided code is a simple Python script that uses the OpenWeatherMap API to retrieve and display weather information for a city. It accomplishes the following:
+
+  Imports the requests library in order to perform HTTP requests.
+
+Specifies an API key for use with the OpenWeatherMap API.
+
+Two functions are defined:
+
+fetch_weather(api_key, city): This function creates an API request URL with the provided API key and the specified city, sends an HTTP GET request to OpenWeatherMap, and returns weather data in JSON format.
+convert_kelvin_to_celsius(temp): By subtracting 273.15, this function converts a temperature in Kelvin to a temperature in Celsius.
+Enters a while loop, which gives the user two options:
+
+Option 1: Enter the name of a city.
+Option 2: Close the weather app.
+User input is used to determine the user's preference.
+
+If the user selects option 1, they are prompted to enter the name of their city.
+
+If the user selects option 2, the application closes.
+
+If the user makes an incorrect selection, an error message is displayed and the loop continues.
+
+When a valid city name is entered, the script invokes the fetch_weather function to retrieve weather information for the specified city.
+
+If weather data is available, it extracts and displays the weather condition and temperature (in Celsius).
+
+If the weather data for the specified city is not found, it displays a message indicating that it was not found.
+
+The script functions primarily as a basic weather application, allowing the user to look up weather information for a city by entering its name and displaying the current weather condition and temperature in Celsius.
